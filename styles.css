@@ -62,7 +62,7 @@ body {
 }
 
 /* Centered section inside the top navigation */
-.NavOverview a {
+.toOverview a {
   float: none;
   position: absolute;
   top: 50%;
@@ -71,7 +71,7 @@ body {
 }
 
 /* Right-aligned section inside the top navigation */
-.Sections {
+.toTable {
   float: right;
 }
 
@@ -129,3 +129,4 @@ table{
 th,td{
   border: 1px solid black;
 }
+  

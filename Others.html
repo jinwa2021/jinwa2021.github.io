@@ -1,5 +1,21 @@
+<!-- GEOM101 Assignment 2  by  Jing Wang, Student Number:10271737
+
+ This main goal of this assignment is to make a personal website hosted on Github.
+ Github Address fpr main/index page: https://jinwa2021.github.io/index.html
+ Github Address for current page: https://jinwa2021.github.io/Others.html
+ Description: This is a website displays pictures of fighter jetsgrouped by their generation and block factions.
+ 
+ For this Assignment, 4 ITEMS from instruction 3 were implemented:
+	1. Item 1: Table of Values
+	2. Item 2: 5 or more images at natural size
+	3. Item 5: Navigation Bars.
+	6  Item 6: At least 2 External links.
+ 
+ All pictures used are in the public domain and allowed for fair use.
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <!--Here starts the body of the webpage-->
   <body>
     <!--Importing the stylesheet: styles.css -->
@@ -11,11 +27,12 @@
     <!-- Referenced: https://www.w3schools.com/css/css_navbar.asp -->
     <!-- Heavily Referenced: https://www.w3schools.com/howto/howto_css_topnav_centered.asp -->
     <div class="navbar">
-      <div class="NavOverview"><a href="index.html" class= "active">Overview</a></div>
-      <a href="NATO.html">NATO Countries</a>
-      <a href="WP_CIS.html">Warsaw-Pact/CIS Countries</a>
+      <div class="toOverview"><a href="index.html" class= "active">Overview</a></div>
+      <a href="NATO.html">NATO</a>
+      <a href="WP_CIS.html">WP/CIS</a>
       <a href="Others.html">Others</a>
-      <div class="Sections">
+      
+      <div class="toTable">
         <a href="index.html#OverviewTable">Overview Table</a>
       </div>
     </div>
@@ -24,41 +41,46 @@
     <!--All the images needed are called by the <img> tag along with the "alt" which provides an alternative text if the user cannot view the image-->
     <!--Both width and height of the image is given to provide the original quality of the image-->
     <figure id="J8">
-      <img class="resize" src="J8.jpg" alt="Shenyang J-8 (P.R.China)">
+      <img src="J8.jpg" alt="Shenyang J-8 (P.R.China)">
       <figcaption>Shenyang J-8(P.R.China)</figcaption>
-      <figcaption>Picture Source: <a href="https://en.wikipedia.org/wiki/Shenyang_J-8#/media/File:Defense.gov_News_Photo_010124-D-0000X-001.jpg">https://en.wikipedia.org/wiki/Shenyang_J-8#/media/File:Defense.gov_News_Photo_010124-D-0000X-001.jpg</a></figcaption>
-      <figcaption> <a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></figcaption>
     </figure>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Shenyang_J-8#/media/File:Defense.gov_News_Photo_010124-D-0000X-001.jpg">https://en.wikipedia.org/wiki/Shenyang_J-8#/media/File:Defense.gov_News_Photo_010124-D-0000X-001.jpg</a></p>
+    <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
+
     <figure id="JH7A">
-      <img class="resize" src="JH7A.jpg" alt="Xi'an JH-7A (P.R.China)">
+      <img src="JH7A.jpg" alt="Xi'an JH-7A (P.R.China)">
       <figcaption>Xi'an JH-7A (P.R.China)</figcaption>
-      <figcaption>Picture Source: <a href="https://en.wikipedia.org/wiki/Xi%27an_JH-7#/media/File:Xian_JH-7A.jpg">https://en.wikipedia.org/wiki/Xi%27an_JH-7#/media/File:Xian_JH-7A.jpg</a></figcaption>
-      <figcaption> <a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></figcaption>
     </figure>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Xi%27an_JH-7#/media/File:Xian_JH-7A.jpg">https://en.wikipedia.org/wiki/Xi%27an_JH-7#/media/File:Xian_JH-7A.jpg</a></p>
+    <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
+
     <figure id="J10">
-      <img class="resize" src="J10B.jpg" alt="Chengdu J-10B (P.R.China)">
+      <img src="J10B.jpg" alt="Chengdu J-10B (P.R.China)">
       <figcaption>Chengdu J-10B (P.R.China)</figcaption>
-      <figcaption>Picture Source: <a href="https://en.wikipedia.org/wiki/Chengdu_J-10#/media/File:J-10B_with_PL-10_and_PL-12.jpg">https://en.wikipedia.org/wiki/Chengdu_J-10#/media/File:J-10B_with_PL-10_and_PL-12.jpg</a></figcaption>
-      <figcaption> <a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></figcaption>
     </figure>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Chengdu_J-10#/media/File:J-10B_with_PL-10_and_PL-12.jpg">https://en.wikipedia.org/wiki/Chengdu_J-10#/media/File:J-10B_with_PL-10_and_PL-12.jpg</a></p>
+    <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
+
     <figure id="JF17">
-      <img class="resize" src="JF-17.jpg" alt="JF-17 (Pakistan/China)">
+      <img src="JF17.jpg" alt="JF-17 (Pakistan/China)">
       <figcaption>JF-17 (Pakistan/China)</figcaption>
-      <figcaption>Picture Source: <a href="https://en.wikipedia.org/wiki/CAC/PAC_JF-17_Thunder#/media/File:Pakistan_JF-17_(modified).jpg">https://en.wikipedia.org/wiki/CAC/PAC_JF-17_Thunder#/media/File:Pakistan_JF-17_(modified).jpg</a></figcaption>
-      <figcaption> <a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></figcaption>
     </figure>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/CAC/PAC_JF-17_Thunder#/media/File:Pakistan_JF-17_(modified).jpg">https://en.wikipedia.org/wiki/CAC/PAC_JF-17_Thunder#/media/File:Pakistan_JF-17_(modified).jpg</a></p>
+    <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
+
     <figure id="TEJAS">
-      <img class="resize" src="Tejas.jpg" alt="HAL Tejas (India)">
+      <img src="Tejas.jpg" alt="HAL Tejas (India)">
       <figcaption>HAL Tejas (India)</figcaption>
-      <figcaption>Picture Source: <a href="https://en.wikipedia.org/wiki/HAL_Tejas#/media/File:IAF_Tejas_full_size_(32941198511).jpg">https://en.wikipedia.org/wiki/HAL_Tejas#/media/File:IAF_Tejas_full_size_(32941198511).jpg</a></figcaption>
-      <figcaption> <a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></figcaption>
     </figure>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/HAL_Tejas#/media/File:IAF_Tejas_full_size_(32941198511).jpg">https://en.wikipedia.org/wiki/HAL_Tejas#/media/File:IAF_Tejas_full_size_(32941198511).jpg</a></p>
+    <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
+
     <figure id="J20">
-      <img class="resize" src="J20.jpg" alt="Chengdu J-20 (P.R.China)">
+      <img src="J20.jpg" alt="Chengdu J-20 (P.R.China)">
       <figcaption>Chengdu J-20 (P.R.China)</figcaption>
-      <figcaption>Picture Source: <a href="https://en.wikipedia.org/wiki/Chengdu_J-20#/media/File:J-20_at_Airshow_China_2016.jpg">https://en.wikipedia.org/wiki/Chengdu_J-20#/media/File:J-20_at_Airshow_China_2016.jpg</a></figcaption>
-      <figcaption> <a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></figcaption>
     </figure>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Chengdu_J-20#/media/File:J-20_at_Airshow_China_2016.jpg">https://en.wikipedia.org/wiki/Chengdu_J-20#/media/File:J-20_at_Airshow_China_2016.jpg</a></p>
+    <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
     <!--Proper title is provided for the webpage-->
     <p>Generation classification is provided by AEROSPACEWEB</p>
