@@ -1,10 +1,29 @@
-/*The following css stylesheet provides the background color, font style and size for the entire webpage*/
+/*
+GEOM101 Assignment 2  by  Jing Wang, Student Number:10271737
+
+ This main goal of this assignment is to make a personal website hosted on Github.
+ Github Address fpr main/index page: https://jinwa2021.github.io/index.html
+ Current file is the CSS stylesheet for formats and stles
+ Description: This is a website displays pictures of fighter jetsgrouped by their generation and block factions.
+
+ For this Assignment, 4 ITEMS from instruction 3 were implemented:
+	1. Item 1: Table of Values
+	2. Item 2: 5 or more images at natural size
+	3. Item 5: Navigation Bars.
+	6  Item 6: At least 2 External links.
+ 
+ All pictures used are in the public domain and allowed for fair use.
+
+ The current file provides the formatting and styling for all four webpages of the entire website
+ 
+ */
+
 /* Color code Source: https://www.w3schools.com/html/html_colors.asp*/
 /*The body part of the webpage is selected with a proper font size, color and style,which is adequate for the website*/
 body {
     background-color: #789be7;
     font-family: Times New Roman, serif;
-    font-size: 22px;
+    font-size: 24px;
     text-align: center;
   }
   
@@ -88,9 +107,20 @@ p{
   /*the heading "h2" is selected with a proper font size, color and style,which is adequate for the website*/
 
   /*The "pre" parts of the webpage is aligned to the left to adjust to the webpage*/
-pre {
-      text-align: left;
+p.a {
+      text-align: right;
+      font-size: 20px;
   }
+
+p.b {
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+figure{
+  margin-top: 250px;
+}
 
 table{
   border: 3px solid black;
@@ -99,22 +129,3 @@ table{
 th,td{
   border: 1px solid black;
 }
-
-td{
-  border: 1px solid black;
-}
-
-.resize{
-  width: 1000px;
-  height: auto;
-}
-
-/*table {
-  table-layout: fixed;  
-  width:100%;
-  border-collapse: collapse;
-  border: 3pxs solid black;
-}
-
-
-  
