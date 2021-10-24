@@ -1,12 +1,137 @@
+<!-- GEOM101 Assignment 2  by  Jing Wang, Student Number:10271737
+
+  This main goal of this assignment is to make a personal website hosted on Github
+-->
 <!DOCTYPE html>
+<!--  -->
 <html>
- <head>
-   <title> Page Title</title>
- </head>
- <body>
-   
-   <h1>This is a Heading</h1>
-   <p>This is a paragraph</p>
-  
- </body>
+<!--  -->
+  <head>
+  <!-- -->
+    <link rel="stylesheet" href="styles.css">
+    <!--Proper title is provided for the webpage-->
+    <title> Modern Fighter Jets </title>
+    <!--Character encoding is defined-->
+    <!--Source: https://www.w3schools.com/html/html_charset.asp-->
+    <!--Source: https://www.w3schools.com/html/html_responsive.asp-->
+    <meta charset="UTF-8">
+    <!--<meta name="description" content="Profile of Praveen Mohan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  </head>
+ 
+  <!--h1 provides the heading for the page-->
+  <h1> Modern Fighter Jets </h1> 
+ 
+  <!--Providing a navigation bar to let the user direct through the webpage-->
+  <!-- Referenced: https://www.w3schools.com/css/css_navbar.asp -->
+  <!-- Heavily Referenced: https://www.w3schools.com/howto/howto_css_topnav_centered.asp -->
+  <div class="navbar">
+    <div class="NavOverview"><a href="index.html" class= "active">Overview</a></div>
+    <a href="NATO.html">NATO Countries</a>
+    <a href="WP_CIS.html">Warsaw-Pact/CIS Countries</a>
+    <a href="Others.html">Others</a>
+    <div class="Sections">
+      <a href="index.html#OverviewTable">Overview Table</a>
+    </div>
+  </div>
+
+  <!--h2 provides the subheading for the webpage-->
+  <h2> An Overview by Generations </h2>
+ 
+  <!--Here starts the body of the webpage-->
+  <body>
+    <h3>Definition</h3>  
+    <!--"p" for paragraph, "b" means bold-->  
+    <p><u>Fighter jets</u>, also named as jet-powered fighter is a type of <u>fixed-winged</u> <u>military aircraft</u>
+      designed primarily for <u>air-to-air combat</u>, powered by <u>jet engeines</u>.
+    </p>
+    
+    <!--"p" provides the start of a paragraph with heading in bold style represented by "b"-->
+	  <h3>Terminology with Wikipedia Links</h3>
+    <!--The pre element is displayed with default width and the text preserves both spaces and line breaks exactly as in HTML source code.-->
+    <!--"href is provided as a link to the document which opens in a new tab because of "target="_blank""-->
+    <!--Source: https://www.w3schools.com/html/html_links.asp-->
+	  <p> <a href="https://en.wikipedia.org/wiki/Fighter_aircraft#Jet-powered_fighters" target="_blank">Fighter jets</a>, 
+      <a href="https://en.wikipedia.org/wiki/Fixed-wing_aircraft" target="_blank">fixed-winged</a>, 
+      <a href="https://en.wikipedia.org/wiki/Military_aircraft" target="_blank">military aircraft</a>, 
+      <a href="https://en.wikipedia.org/wiki/Air_combat_manoeuvring" target="_blank">air-to-air combat</a>, 
+      <a href="https://en.wikipedia.org/wiki/Jet_engine" target="_blank">jet engeines</a>, 
+	  </p>
+	  
+    <!-- table -->
+    <!-- Referenced: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables -->
+    <table id="OverviewTable">
+      <caption><h3>Table of Fighter Jets by Generation</h3></caption>
+      <tr>
+        <th>Generation</th>
+        <th>Description</th>
+        <th>Example Aircrafts <a href="NATO.html">(NATO)</a></th>
+        <th>Example Aircrafts <a href="WP_CIS.html">(WP/CIS)</a></th>
+        <th>Example Aircrafts <a href="Others.html">(Others)</a></th>
+        <th>Period</th>
+      </tr>
+      <tr>
+        <th>1st Gen</th>
+        <td>High subsonic, transonic, air-to-air missiles, radar</td>
+        <td><a href="NATO.html#DHVamp">DH Vampire</a>, <a href="NATO.html#P80">P-80</a>, <a href="NATO.html#F86">F-86</a>, <a href="NATO.html#DMIV">Dassault Mystère IV</a>, 
+        <a href="NATO.html#HH">Hawker Hunter</a></td>
+        <!--<td><a href="NATO.html">DH Vampire, P-80, F-86, Dassault Mystère IV, Hawker Hunter</a></td>-->
+        <td><a href="WP_CIS.html#MIG9">Mig-9</a>, <a href="WP_CIS.html#MIG15">Mig-15</a></td>
+        <!--<td><a href="WP.html">Mig-9, Mig-15</a></td>-->
+        <td>none</td>
+        <td>1943-1955</td>
+      </tr>
+      <tr>
+        <th>2nd Gen</th>
+        <td>Early supersonic radar, Supersonic air-to-air missiles (limited purpose)</td>
+        <td><a href="NATO.html#F100">F-100</a>, <a href="NATO.html#DSMB2">Dassault Super Mystère B2</a>, <a href="NATO.html#F104">F-104</a>, <a href="NATO.html#DMIII">Mirage III</a></td>
+        <td><a href="WP_CIS.html#MIG19">Mig-19</a>, <a href="WP_CIS.html#MIG21">Mig-21</a></td>
+        <td><a href="Others.html#J8">Shenyang J-8</a></td>
+        <td>1953-1970</td>
+      </tr>
+      <tr>
+        <th>3rd Gen</th>
+        <td>multi-purpose fighter-bombers</td>
+        <td><a href="NATO.html#F4">F-4</a>, <a href="NATO.html#DMF1">Mirage F1</a></td>
+        <td><a href="WP_CIS.html#MIG23">Mig-23</a></td>
+        <td>none</td>
+        <td>1953-1970</td>
+      </tr>
+      <tr>
+        <th>4rd Gen</th>
+        <td>Supersonic, multirole, high efficiency. High manoeuvrability</td>
+        <td><a href="NATO.html#Tornado">Panavia Tornado</a>, <a href="NATO.html#F14">F-14</a>,
+          <a href="NATO.html#F15">F-15</a>, <a href="NATO.html#F16">F-16</a>, 
+          <a href="NATO.html#DM2000">Mirage-2000</a>
+        </td>
+        <td><a href="WP_CIS.html#MIG29">Mig-29</a>, <a href="WP_CIS.html#SU27">Su-27</a></td>
+        <td><a href="Others.html#JH7A">JH-7A</a></td>
+        <td>1970-1990</td>
+      </tr>
+      <tr>
+        <th>4.5th Gen</th>
+        <td>Gen 3 with enhanced capabilities, advanced avionics, limited stealth</td>
+        <td><a href="NATO.html#F18">F-18</a>, <a href="NATO.html#F15EX">F-15E/EX</a>, 
+          <a href="NATO.html#Rafale">Rafale</a>, <a href="NATO.html#Typhoon">Eurofighter Typhoon</a>
+        </td>
+        <td><a href="WP_CIS.html#SU30">Su-30</a>, <a href="WP_CIS.html#SU35">Su-35</a>,
+        <td><a href="Others.html#J10">Chengdu J-10B/C</a>, <a href="Others.html#JF17">JF-17</a>, <a href="Others.html#TEJAS">HAL Tejas</a></td>
+        <td>1990-present</td>
+      </tr>
+      <tr>
+        <th>5th Gen</th>
+        <td>Advanced integrated avionics, low observable stealth</td>
+        <td><a href="NATO.html#F22">F-22</a>, <a href="NATO.html#F35">F-35</a></td>
+        <td><a href="WP_CIS.html#SU57">Su-57</a></td>
+        <td><a href="Others.html#J20">Chengdu J-20</a></td>
+        <td>2000-present</td>
+      </tr>
+    </table>
+    <!-- "p" for paragraph -->	
+    <!--Source: https://www.w3schools.com/html/html_links.asp-->
+    <p>Generation classification is provided by AEROSPACEWEB</p>
+    <p>Source: <a href="https://en.wikipedia.org/wiki/Jet_fighter_generations" target="_blank">https://en.wikipedia.org/wiki/Jet_fighter_generations</a></p>			
+  </body>
+  <!--"</body> denotes end of the body part of this particular webpage-->
 </html>
