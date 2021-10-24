@@ -14,9 +14,18 @@
  All pictures used are in the public domain and allowed for fair use.
 -->
 
+<!-- Doctype declaration is an information to the browser about what type of document is to expect-->
+<!-- Source: https://www.w3schools.com/tags/tag_doctype.asp -->
 <!DOCTYPE html>
+
+<!-- marking the start of the HTML document and the language as english. -->
+<!-- Source: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <html lang="en">
+  
+  <!-- head block tells of the title of the document as "Modern Fighter Jets Overview" -->
+  <!-- https://www.w3schools.com/html/html_head.asp -->
   <head>
+    
     <!--title of this document-->
     <title>Fighter Jets from Countries other than NATO and WP/CIS Countries</title>
      
@@ -26,68 +35,92 @@
 
   <!--Here starts the body of the webpage-->
   <body>
-    <!--h1 provides the heading for the page-->
-    <h1> Modern Fighter Jets </h1> 
-    <!--Providing a navigation bar to let the user direct through the webpage-->
+    <!-- This h1 provides the heading for the page. this is the same across all 4 pages.-->
+    <h1> Modern Fighter Jets </h1>
+
+    <!-- INSTRUCTION 3 ITEM 5 implemetation: Providing a navigation bar to let the user direct through the webpage-->
     <!-- Referenced: https://www.w3schools.com/css/css_navbar.asp -->
     <!-- Heavily Referenced: https://www.w3schools.com/howto/howto_css_topnav_centered.asp -->
+    <!-- A division is used to create a black bar, three titles are left aligned, one is center aligned and one is right aligned -->
     <div class="navbar">
-      <div class="toOverview"><a href="index.html" class= "active">Overview</a></div>
+      <!-- toOverview is the center-aligned button, it links to the index (Overview) page -->
+      <div class="toOverview"><a href="index.html">Overview</a></div>
+      <!-- the three <a> tag below are the three remaining pages. the current page Other.html is set as active page -->
       <a href="NATO.html">NATO</a>
       <a href="WP_CIS.html">WP/CIS</a>
-      <a href="Others.html">Others</a>
-      
+      <a href="Others.html" class= "active">Others</a>
+      <!-- this sub division below named toTable is a navigation link that links right to the table on index (Overview) page -->
       <div class="toTable">
         <a href="index.html#OverviewTable">Overview Table</a>
       </div>
     </div>
 
+    <!--h2 provides the subheading for the webpage, this is unique for each of the 4 pages-->
     <h2>Fighter Jets from Countries not in NATO and Warsaw-Pact/CIS</h2>
-    <!--All the images needed are called by the <img> tag along with the "alt" which provides an alternative text if the user cannot view the image-->
-    <!--Both width and height of the image is given to provide the original quality of the image-->
+
+    <!-- INSTRUCTION 3 ITEM 2 implemetation: 5 or more unique picture in original size-->
+    <!-- All images are within figure blocks with their own captions and ids to trace back to tables-->
+    <!-- Source: https://www.w3schools.com/html/html_images.asp  -->
+    <!-- Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
+    <!-- Because the following <figure>, <p.a> and <p.b> blocks are the same structure repeated 10 time for each of the 10 images of aircrafts, only the first one is commented in detail-->
+    <!-- A <figure> block with a unique figure id is given to each picture -->
     <figure id="J8">
+      <!-- <img> is used to embed an image in this page -->
       <img src="J8.jpg" alt="Shenyang J-8 (P.R.China)">
+      <!-- Caption is provided to name the image -->
       <figcaption>Shenyang J-8(P.R.China)</figcaption>
     </figure>
-    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Shenyang_J-8#/media/File:Defense.gov_News_Photo_010124-D-0000X-001.jpg">https://en.wikipedia.org/wiki/Shenyang_J-8#/media/File:Defense.gov_News_Photo_010124-D-0000X-001.jpg</a></p>
+    <!-- the following unique <p> lines with class a is providing the source and link of the image and it's right aligned (formated in Styles.CSS) -->
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Shenyang_J-8#/media/File:Defense.gov_News_Photo_010124-D-0000X-001.jpg" target="_blank">https://en.wikipedia.org/wiki/Shenyang_J-8#/media/File:Defense.gov_News_Photo_010124-D-0000X-001.jpg</a></p>
+    <!-- the following unique <p> lines with class b is providing internal links to the top of page and to the table on index (Overview) page and it's also right aligned (formated in Styles.CSS)-->
     <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+    <!-- same structure as above, please refer to the first <figure> block (id:"J8") for detail -->
     <figure id="JH7A">
       <img src="JH7A.jpg" alt="Xi'an JH-7A (P.R.China)">
       <figcaption>Xi'an JH-7A (P.R.China)</figcaption>
     </figure>
-    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Xi%27an_JH-7#/media/File:Xian_JH-7A.jpg">https://en.wikipedia.org/wiki/Xi%27an_JH-7#/media/File:Xian_JH-7A.jpg</a></p>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Xi%27an_JH-7#/media/File:Xian_JH-7A.jpg" target="_blank">https://en.wikipedia.org/wiki/Xi%27an_JH-7#/media/File:Xian_JH-7A.jpg</a></p>
     <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+    <!-- same structure as above, please refer to the first <figure> block (id:"J8") for detail -->
     <figure id="J10">
       <img src="J10B.jpg" alt="Chengdu J-10B (P.R.China)">
       <figcaption>Chengdu J-10B (P.R.China)</figcaption>
     </figure>
-    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Chengdu_J-10#/media/File:J-10B_with_PL-10_and_PL-12.jpg">https://en.wikipedia.org/wiki/Chengdu_J-10#/media/File:J-10B_with_PL-10_and_PL-12.jpg</a></p>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Chengdu_J-10#/media/File:J-10B_with_PL-10_and_PL-12.jpg" target="_blank">https://en.wikipedia.org/wiki/Chengdu_J-10#/media/File:J-10B_with_PL-10_and_PL-12.jpg</a></p>
     <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+    <!-- same structure as above, please refer to the first <figure> block (id:"J8") for detail -->
     <figure id="JF17">
       <img src="JF17.jpg" alt="JF-17 (Pakistan/China)">
       <figcaption>JF-17 (Pakistan/China)</figcaption>
     </figure>
-    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/CAC/PAC_JF-17_Thunder#/media/File:Pakistan_JF-17_(modified).jpg">https://en.wikipedia.org/wiki/CAC/PAC_JF-17_Thunder#/media/File:Pakistan_JF-17_(modified).jpg</a></p>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/CAC/PAC_JF-17_Thunder#/media/File:Pakistan_JF-17_(modified).jpg" target="_blank">https://en.wikipedia.org/wiki/CAC/PAC_JF-17_Thunder#/media/File:Pakistan_JF-17_(modified).jpg</a></p>
     <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+    <!-- same structure as above, please refer to the first <figure> block (id:"J8") for detail -->
     <figure id="TEJAS">
       <img src="Tejas.jpg" alt="HAL Tejas (India)">
       <figcaption>HAL Tejas (India)</figcaption>
     </figure>
-    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/HAL_Tejas#/media/File:IAF_Tejas_full_size_(32941198511).jpg">https://en.wikipedia.org/wiki/HAL_Tejas#/media/File:IAF_Tejas_full_size_(32941198511).jpg</a></p>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/HAL_Tejas#/media/File:IAF_Tejas_full_size_(32941198511).jpg" target="_blank">https://en.wikipedia.org/wiki/HAL_Tejas#/media/File:IAF_Tejas_full_size_(32941198511).jpg</a></p>
     <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+    <!-- same structure as above, please refer to the first <figure> block (id:"J8") for detail -->
     <figure id="J20">
       <img src="J20.jpg" alt="Chengdu J-20 (P.R.China)">
       <figcaption>Chengdu J-20 (P.R.China)</figcaption>
     </figure>
-    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Chengdu_J-20#/media/File:J-20_at_Airshow_China_2016.jpg">https://en.wikipedia.org/wiki/Chengdu_J-20#/media/File:J-20_at_Airshow_China_2016.jpg</a></p>
+    <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Chengdu_J-20#/media/File:J-20_at_Airshow_China_2016.jpg" target="_blank">https://en.wikipedia.org/wiki/Chengdu_J-20#/media/File:J-20_at_Airshow_China_2016.jpg</a></p>
     <p class="b"><a href="Others.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
-    <!--Proper title is provided for the webpage-->
+
+    <!-- The following line provides the source information of the information provided above -->
+    <!-- "p" for paragraph -->	
+    <!-- INSTRUCTION 3 ITEM 6 implemetation: full URL links to external content. Below is another example of this-->
+    <!-- "href" registers the URL of the target distination, target="_blank" means opens a new window or tab for the target-->
+    <!--Source: https://www.w3schools.com/html/html_links.asp-->
     <p>Generation classification is provided by AEROSPACEWEB</p>
     <p>Source: <a href="https://en.wikipedia.org/wiki/Jet_fighter_generations" target="_blank">https://en.wikipedia.org/wiki/Jet_fighter_generations</a></p>
 

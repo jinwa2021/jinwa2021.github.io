@@ -13,197 +13,243 @@
  
  All pictures used are in the public domain and allowed for fair use.
 -->
+
+<!-- Doctype declaration is an information to the browser about what type of document is to expect-->
+<!-- Source: https://www.w3schools.com/tags/tag_doctype.asp -->
 <!DOCTYPE html>
+
+<!-- marking the start of the HTML document and the language as english. -->
+<!-- Source: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <html lang="en">
-    <!--Here starts the body of the webpage-->
+    
+    <!-- head block tells of the title of the document as "Modern Fighter Jets Overview" -->
+    <!-- https://www.w3schools.com/html/html_head.asp -->
     <head>
-        <!--title of this document-->
+        <!--title of this page-->
         <title>Fighter Jets from the NATO Countries</title>
          
-        <!--Importing the stylesheet for the html from Project2.css by using the rel tag-->
+        <!-- linking to external CSS file "styles.css" for styles and formatting -->
         <link rel="stylesheet" href="styles.css">
     </head>
-    
+
+    <!--Starting the Body of the page, everthing that is visibly displayed is in here-->
     <body>
-        <!--h1 provides the heading for the page-->
+        <!-- This h1 provides the heading for the page. this is the same across all 4 pages.-->
         <h1> Modern Fighter Jets </h1> 
-        <!--Providing a navigation bar to let the user direct through the webpage-->
+
+        <!-- INSTRUCTION 3 ITEM 5 implemetation: Providing a navigation bar to let the user direct through the webpage-->
         <!-- Referenced: https://www.w3schools.com/css/css_navbar.asp -->
         <!-- Heavily Referenced: https://www.w3schools.com/howto/howto_css_topnav_centered.asp -->
+        <!-- A division is used to create a black bar, three titles are left aligned, one is center aligned and one is right aligned -->
         <div class="navbar">
-            <div class="toOverview"><a href="index.html" class= "active">Overview</a></div>
-            <a href="NATO.html">NATO</a>
+            <!-- toOverview is the center-aligned button, it links to the index (Overview) page -->
+            <div class="toOverview"><a href="index.html">Overview</a></div>
+            <!-- the three <a> tag below are the three remaining pages, the current page NATO.html is set as active-->
+            <a href="NATO.html" class= "active">NATO</a>
             <a href="WP_CIS.html">WP/CIS</a>
             <a href="Others.html">Others</a>
-      
+            <!-- this sub division below named toTable is a navigation link that links right to the table on index (Overview) page -->
             <div class="toTable">
             <a href="index.html#OverviewTable">Overview Table</a>
             </div>
         </div>
 
+        <!--h2 provides the subheading for the webpage, this is unique for each of the 4 pages-->
         <h2>Fighters Jets from NATO Countries</h2>
-        <!--All images are within figure blocks with their own captions and ids to trace back to tables-->
-        <!--Both width and height of the image is given to provide the original quality of the image-->
+
+        <!-- INSTRUCTION 3 ITEM 2 implemetation: 5 or more unique picture in original size-->
+        <!-- All images are within figure blocks with their own captions and ids to trace back to tables-->
+        <!-- Source: https://www.w3schools.com/html/html_images.asp  -->
+        <!-- Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
+        <!-- Because the following <figure>, <p.a> and <p.b> blocks are the same structure repeated 23 time for each of the 23 images of aircrafts, only the first one is commented in detail-->
+        <!-- A <figure> block with a unique figure id is given to each picture -->
         <figure id="DHVamp">
+            <!-- <img> is used to embed an image in this page -->
             <img src="Vampire.jpg" alt="DH Vampire">
+            <!-- Caption is provided to name the image -->
             <figcaption>DH Vampire</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/De_Havilland_Vampire#/media/File:Vampire_3_(cropped)_copy.jpg">https://en.wikipedia.org/wiki/De_Havilland_Vampire#/media/File:Vampire_3_(cropped)_copy.jpg</a></p>
+        <!-- the following unique <p> lines with class a is providing the source and link of the image and it's right aligned (formated in Styles.CSS) -->
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/De_Havilland_Vampire#/media/File:Vampire_3_(cropped)_copy.jpg" target="_blank">https://en.wikipedia.org/wiki/De_Havilland_Vampire#/media/File:Vampire_3_(cropped)_copy.jpg</a></p>
+        <!-- the following unique <p> lines with class b is providing internal links to the top of page and to the table on index (Overview) page and it's also right aligned (formated in Styles.CSS)-->
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
-
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="P80">
             <img src="P80.jpg" alt="P-80">
             <figcaption>P-80</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Lockheed_P-80_Shooting_Star#/media/File:P80-1_300_(cropped).jpg">https://en.wikipedia.org/wiki/Lockheed_P-80_Shooting_Star#/media/File:P80-1_300_(cropped).jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Lockheed_P-80_Shooting_Star#/media/File:P80-1_300_(cropped).jpg" target="_blank">https://en.wikipedia.org/wiki/Lockheed_P-80_Shooting_Star#/media/File:P80-1_300_(cropped).jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F86">
             <img src="F86.jpg" alt="F-86">
             <figcaption>F-86</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/North_American_F-86_Sabre#/media/File:F-86_Sabre_hertiage_flight.jpg">https://en.wikipedia.org/wiki/North_American_F-86_Sabre#/media/File:F-86_Sabre_hertiage_flight.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/North_American_F-86_Sabre#/media/File:F-86_Sabre_hertiage_flight.jpg" target="_blank">https://en.wikipedia.org/wiki/North_American_F-86_Sabre#/media/File:F-86_Sabre_hertiage_flight.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
-
+        
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="DMIV">
             <img src="MystereIV.jpg" alt="Dassault Mystère IV">
             <figcaption>Dassault Mystère IV</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Myst%C3%A8re_IV#/media/File:Dassault_Myst%C3%A8re_IV.jpg">https://en.wikipedia.org/wiki/Dassault_Myst%C3%A8re_IV#/media/File:Dassault_Myst%C3%A8re_IV.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Myst%C3%A8re_IV#/media/File:Dassault_Myst%C3%A8re_IV.jpg" target="_blank">https://en.wikipedia.org/wiki/Dassault_Myst%C3%A8re_IV#/media/File:Dassault_Myst%C3%A8re_IV.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="HH">
             <img src="Hunter.jpg" alt="Hawker Hunter">
             <figcaption>Hawker Hunter</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Hawker_Hunter#/media/File:Hunter_-_Shuttleworth_Military_Pageant_June_2013_(9187713516).jpg">https://en.wikipedia.org/wiki/Hawker_Hunter#/media/File:Hunter_-_Shuttleworth_Military_Pageant_June_2013_(9187713516).jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Hawker_Hunter#/media/File:Hunter_-_Shuttleworth_Military_Pageant_June_2013_(9187713516).jpg" target="_blank">https://en.wikipedia.org/wiki/Hawker_Hunter#/media/File:Hunter_-_Shuttleworth_Military_Pageant_June_2013_(9187713516).jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F100">
             <img src="F100.jpg" alt="F-100">
             <figcaption>F-100</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/North_American_F-100_Super_Sabre#/media/File:F-100_Rogers_Dry_Lake.jpg">https://en.wikipedia.org/wiki/North_American_F-100_Super_Sabre#/media/File:F-100_Rogers_Dry_Lake.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/North_American_F-100_Super_Sabre#/media/File:F-100_Rogers_Dry_Lake.jpg" target="_blank">https://en.wikipedia.org/wiki/North_American_F-100_Super_Sabre#/media/File:F-100_Rogers_Dry_Lake.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
         
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="DSMB2">
             <img src="SuperMystereB2.jpg" alt="Dassault Super Mystère B2">
             <figcaption>HDassault Super Mystère B2</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Super_Myst%C3%A8re#/media/File:SuperMystereB2.JPG">https://en.wikipedia.org/wiki/Dassault_Super_Myst%C3%A8re#/media/File:SuperMystereB2.JPG</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Super_Myst%C3%A8re#/media/File:SuperMystereB2.JPG" target="_blank">https://en.wikipedia.org/wiki/Dassault_Super_Myst%C3%A8re#/media/File:SuperMystereB2.JPG</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F104">
             <img src="F104.jpg" alt="F-104">
             <figcaption>F-104</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Lockheed_F-104_Starfighter#/media/File:Lockheed_XF-104_(modified).jpg">https://en.wikipedia.org/wiki/Lockheed_F-104_Starfighter#/media/File:Lockheed_XF-104_(modified).jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Lockheed_F-104_Starfighter#/media/File:Lockheed_XF-104_(modified).jpg" target="_blank">https://en.wikipedia.org/wiki/Lockheed_F-104_Starfighter#/media/File:Lockheed_XF-104_(modified).jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="DMIII">
             <img src="MirageIII.jpg" alt="MirageIII">
             <figcaption>MirageIII</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Mirage_III#/media/File:RAAF_Mirage_III_(78-438976).jpg">https://en.wikipedia.org/wiki/Dassault_Mirage_III#/media/File:RAAF_Mirage_III_(78-438976).jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Mirage_III#/media/File:RAAF_Mirage_III_(78-438976).jpg" target="_blank">https://en.wikipedia.org/wiki/Dassault_Mirage_III#/media/File:RAAF_Mirage_III_(78-438976).jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F4">
             <img src="F4.jpg" alt="F-4">
             <figcaption>F-4</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#/media/File:QF-4_Holloman_AFB.jpg">https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#/media/File:QF-4_Holloman_AFB.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#/media/File:QF-4_Holloman_AFB.jpg" target="_blank">https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#/media/File:QF-4_Holloman_AFB.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="DMF1">
             <img src="MirageF1M.jpg" alt="Dassault Mirage F1M">
             <figcaption>Dassault Mirage F1M</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Mirage_F1#/media/File:Ejercito_del_Aire_Mirage_F.1M.jpg">https://en.wikipedia.org/wiki/Dassault_Mirage_F1#/media/File:Ejercito_del_Aire_Mirage_F.1M.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Mirage_F1#/media/File:Ejercito_del_Aire_Mirage_F.1M.jpg" target="_blank">https://en.wikipedia.org/wiki/Dassault_Mirage_F1#/media/File:Ejercito_del_Aire_Mirage_F.1M.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="Tornado">
             <img src="Tornado.jpg" alt="Panavia Tornado">
             <figcaption>Panavia Tornado</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Panavia_Tornado#/media/File:RAF_Tornado_GR4_MOD_45155233.jpg">https://en.wikipedia.org/wiki/Panavia_Tornado#/media/File:RAF_Tornado_GR4_MOD_45155233.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Panavia_Tornado#/media/File:RAF_Tornado_GR4_MOD_45155233.jpg" target="_blank">https://en.wikipedia.org/wiki/Panavia_Tornado#/media/File:RAF_Tornado_GR4_MOD_45155233.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F14">
             <img src="F14.jpg" alt="F-14">
             <figcaption>F-14</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat#/media/File:US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg">https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat#/media/File:US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat#/media/File:US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg" target="_blank">https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat#/media/File:US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F15">
             <img src="F15C.jpg" alt="F-15C">
             <figcaption>F-15C</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle#/media/File:F-15,_71st_Fighter_Squadron,_in_flight.JPG">https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle#/media/File:F-15,_71st_Fighter_Squadron,_in_flight.JPG</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle#/media/File:F-15,_71st_Fighter_Squadron,_in_flight.JPG" target="_blank">https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle#/media/File:F-15,_71st_Fighter_Squadron,_in_flight.JPG</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F16">
             <img src="F16.jpg" alt="F-16">
             <figcaption>F-16</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon#/media/File:F-16_June_2008.jpg">https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon#/media/File:F-16_June_2008.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon#/media/File:F-16_June_2008.jpg" target="_blank">https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon#/media/File:F-16_June_2008.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="DM2000">
             <img src="Mirage2000C.jpg" alt="Dassault Mirage-2000C">
             <figcaption>Dassault Mirage-2000C</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Mirage_2000#/media/File:Mirage_2000C_in-flight_2_(cropped).jpg">https://en.wikipedia.org/wiki/Dassault_Mirage_2000#/media/File:Mirage_2000C_in-flight_2_(cropped).jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Mirage_2000#/media/File:Mirage_2000C_in-flight_2_(cropped).jpg" target="_blank">https://en.wikipedia.org/wiki/Dassault_Mirage_2000#/media/File:Mirage_2000C_in-flight_2_(cropped).jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F18">
             <img src="FA18C.jpg" alt="FA-18C">
             <figcaption>FA-18C</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/McDonnell_Douglas_F/A-18_Hornet#/media/File:FA-18C_desert_refueling.jpg">https://en.wikipedia.org/wiki/McDonnell_Douglas_F/A-18_Hornet#/media/File:FA-18C_desert_refueling.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/McDonnell_Douglas_F/A-18_Hornet#/media/File:FA-18C_desert_refueling.jpg" target="_blank">https://en.wikipedia.org/wiki/McDonnell_Douglas_F/A-18_Hornet#/media/File:FA-18C_desert_refueling.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F15EX">
             <img src="F15EX.jpg" alt="F-15EX">
             <figcaption>F-15EX</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle#/media/File:F-15EX_Eagle_II.jpg">https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle#/media/File:F-15EX_Eagle_II.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle#/media/File:F-15EX_Eagle_II.jpg" target="_blank">https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle#/media/File:F-15EX_Eagle_II.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="Rafale">
             <img src="Rafale.jpg" alt="Dassault Rafale">
             <figcaption>Dassault Rafale</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Rafale#/media/File:Rafale_-_RIAT_2009_(3751416421).jpg">https://en.wikipedia.org/wiki/Dassault_Rafale#/media/File:Rafale_-_RIAT_2009_(3751416421).jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Dassault_Rafale#/media/File:Rafale_-_RIAT_2009_(3751416421).jpg" target="_blank">https://en.wikipedia.org/wiki/Dassault_Rafale#/media/File:Rafale_-_RIAT_2009_(3751416421).jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="Typhoon">
             <img src="Typhoon.jpg" alt="Eurofighter Typhoon">
             <figcaption>Eurofighter Typhoon</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Eurofighter_Typhoon#/media/File:RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg">https://en.wikipedia.org/wiki/Eurofighter_Typhoon#/media/File:RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Eurofighter_Typhoon#/media/File:RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg" target="_blank">https://en.wikipedia.org/wiki/Eurofighter_Typhoon#/media/File:RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F22">
             <img src="F22.jpg" alt="F-22">
             <figcaption>Eurofighter Typhoon</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor#/media/File:F-22_Raptor_edit1_(cropped).jpg">https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor#/media/File:F-22_Raptor_edit1_(cropped).jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor#/media/File:F-22_Raptor_edit1_(cropped).jpg" target="_blank">https://en.wikipedia.org/wiki/Lockheed_Martin_F-22_Raptor#/media/File:F-22_Raptor_edit1_(cropped).jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
 
+        <!-- same structure as above, please refer to the first <figure> block (id:"DHVamp") for detail -->
         <figure id="F35">
             <img src="F35A.jpg" alt="F-35A">
             <figcaption>F-35A</figcaption>
         </figure>
-        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II#/media/File:F-35A_flight_(cropped).jpg">https://en.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II#/media/File:F-35A_flight_(cropped).jpg</a></p>
+        <p class="a">Picture Source: <a href="https://en.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II#/media/File:F-35A_flight_(cropped).jpg" target="_blank">https://en.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II#/media/File:F-35A_flight_(cropped).jpg</a></p>
         <p class="b"><a href="NATO.html"><u>Back to Top</u></a> / <a href="index.html#OverviewTable"><u>Back to Table</u></a></p>
         
+        
+        <!-- The following line provides the source information of the information provided above -->
+        <!-- "p" for paragraph -->	
+        <!-- INSTRUCTION 3 ITEM 6 implemetation: full URL links to external content. Below is another example of this-->
+        <!-- "href" registers the URL of the target distination, target="_blank" means opens a new window or tab for the target-->
+        <!--Source: https://www.w3schools.com/html/html_links.asp-->
         <p>Generation classification is provided by AEROSPACEWEB</p>
         <p>Source: <a href="https://en.wikipedia.org/wiki/Jet_fighter_generations" target="_blank">https://en.wikipedia.org/wiki/Jet_fighter_generations</a></p>
-
-
-        
 
     </body>
     <!--"</body>" denotes end of the body part of this particular webpage-->

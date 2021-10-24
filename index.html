@@ -12,52 +12,63 @@
  
  All pictures used are in the public domain and allowed for fair use.
 -->
+
+<!-- Doctype declaration is an information to the browser about what type of document is to expect-->
+<!-- Source: https://www.w3schools.com/tags/tag_doctype.asp -->
 <!DOCTYPE html>
-<!--  -->
+
+<!-- marking the start of the HTML document and the language as english. -->
+<!-- Source: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <html lang="en">
-<!--  -->
+
+  <!-- head block tells of the title of the document as "Modern Fighter Jets Overview" -->
+  <!-- https://www.w3schools.com/html/html_head.asp -->
   <head>
-  <!-- -->
+    <!-- linking to external CSS file "styles.css" for styles and formatting -->
     <link rel="stylesheet" href="styles.css">
-    <!--Proper title is provided for the webpage-->
+    
+    <!--Proper title is provided for this page-->
     <title> Modern Fighter Jets Overview </title>
   </head>
  
- 
- 
-  <!--Here starts the body of the webpage-->
+  <!--Starting the Body of the page, everthing that is visibly displayed is in here-->
   <body>
-     <!--h1 provides the heading for the page-->
+    <!-- This h1 provides the heading for the page. this is the same across all 4 pages.-->
     <h1> Modern Fighter Jets </h1> 
  
-    <!--Providing a navigation bar to let the user direct through the webpage-->
+    <!-- INSTRUCTION 3 ITEM 5 implemetation: Providing a navigation bar to let the user direct through the webpage-->
     <!-- Referenced: https://www.w3schools.com/css/css_navbar.asp -->
     <!-- Heavily Referenced: https://www.w3schools.com/howto/howto_css_topnav_centered.asp -->
+    <!-- A division is used to create a black bar, three titles are left aligned, one is center aligned and one is right aligned -->
     <div class="navbar">
+      <!-- toOverview is the center-aligned button, it links to the index (Overview) page -->
       <div class="toOverview"><a href="index.html" class= "active">Overview</a></div>
+      <!-- the three <a> tag below are the three remaining pages -->
       <a href="NATO.html">NATO</a>
       <a href="WP_CIS.html">WP/CIS</a>
       <a href="Others.html">Others</a>
-      
+      <!-- this sub division below named toTable is a navigation link that links right to the table on index (Overview) page -->
       <div class="toTable">
         <a href="index.html#OverviewTable">Overview Table</a>
       </div>
     </div>
 
-    <!--h2 provides the subheading for the webpage-->
+    <!--h2 provides the subheading for the webpage, this is unique for each of the 4 pages-->
     <h2>An Overview of Fighter Jets by Generations</h2>
 
+    <!-- The text below is headed by a h3 header -->
     <h3>Definition</h3>  
-    <!--"p" for paragraph, "b" means bold-->  
+    <!--"p" for paragraph, "u" means underline, these key words are underlined-->  
     <p><u>Fighter jets</u>, also named as jet-powered fighter is a type of <u>fixed-winged</u> <u>military aircraft</u>
       designed primarily for <u>air-to-air combat</u>, powered by <u>jet engeines</u>.
     </p>
     
-    <!--"p" provides the start of a paragraph with heading in bold style represented by "b"-->
+    <!--"p" provides the start of a paragraph with a heading in h3, this part is to the links to the Wikipedia definitions of the underlined terms above-->
 	  <h3>Terminology with Wikipedia Links</h3>
-    <!--The pre element is displayed with default width and the text preserves both spaces and line breaks exactly as in HTML source code.-->
-    <!--"href is provided as a link to the document which opens in a new tab because of "target="_blank""-->
-    <!--Source: https://www.w3schools.com/html/html_links.asp-->
+    
+    <!-- INSTRUCTION 3 ITEM 6 implemetation: full URL links to external content-->
+    <!-- "href" registers the URL of the target distination, target="_blank" means opens a new window or tab for the target-->
+    <!-- Source: https://www.w3schools.com/html/html_links.asp -->
 	  <p> <a href="https://en.wikipedia.org/wiki/Fighter_aircraft#Jet-powered_fighters" target="_blank">Fighter jets</a>, 
       <a href="https://en.wikipedia.org/wiki/Fixed-wing_aircraft" target="_blank">fixed-winged</a>, 
       <a href="https://en.wikipedia.org/wiki/Military_aircraft" target="_blank">military aircraft</a>, 
@@ -65,48 +76,59 @@
       <a href="https://en.wikipedia.org/wiki/Jet_engine" target="_blank">jet engeines</a>, 
 	  </p>
 	  
-    <!-- table -->
+    <!-- TABLE below! -->
+    <!-- INSTRUCTION 3 ITEM 1 implemetation: TABLE-->
+    <!-- This is 7 row by 6 column table with the top row as the header row, with an id of "OverviewTable"-->
+    <!-- the left most column acts as a key/header column -->
     <!-- Referenced: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables -->
     <table id="OverviewTable">
+      <!-- The caption of this table is formated as a h3, which is in unison with the Definition and Terminology headers -->>
       <caption><h3>Table of Fighter Jets by Generation</h3></caption>
       <tr>
         <th>Generation</th>
         <th>Description</th>
+        <!-- below, the 3rd, 4th, 5th header have internal links to the three other pages -->
         <th>Example Aircrafts <a href="NATO.html">(NATO)</a></th>
         <th>Example Aircrafts <a href="WP_CIS.html">(WP/CIS)</a></th>
         <th>Example Aircrafts <a href="Others.html">(Others)</a></th>
         <th>Period</th>
       </tr>
       <tr>
+        <!-- this left most column is a key column -->
         <th>1st Gen</th>
         <td>High subsonic, transonic, air-to-air missiles, radar</td>
+        <!-- The following 3 cells each containing links to the exact figure block of each aircraft in each of the three other pages -->
         <td><a href="NATO.html#DHVamp">DH Vampire</a>, <a href="NATO.html#P80">P-80</a>, <a href="NATO.html#F86">F-86</a>, <a href="NATO.html#DMIV">Dassault Mystère IV</a>, 
         <a href="NATO.html#HH">Hawker Hunter</a></td>
-        <!--<td><a href="NATO.html">DH Vampire, P-80, F-86, Dassault Mystère IV, Hawker Hunter</a></td>-->
         <td><a href="WP_CIS.html#MIG9">Mig-9</a>, <a href="WP_CIS.html#MIG15">Mig-15</a></td>
-        <!--<td><a href="WP.html">Mig-9, Mig-15</a></td>-->
         <td>none</td>
         <td>1943-1955</td>
       </tr>
       <tr>
+        <!-- this left most column is a key column -->
         <th>2nd Gen</th>
         <td>Early supersonic radar, Supersonic air-to-air missiles (limited purpose)</td>
+        <!-- The following 3 cells each containing links to the exact figure block of each aircraft in each of the three other pages -->
         <td><a href="NATO.html#F100">F-100</a>, <a href="NATO.html#DSMB2">Dassault Super Mystère B2</a>, <a href="NATO.html#F104">F-104</a>, <a href="NATO.html#DMIII">Mirage III</a></td>
         <td><a href="WP_CIS.html#MIG19">Mig-19</a>, <a href="WP_CIS.html#MIG21">Mig-21</a></td>
         <td><a href="Others.html#J8">Shenyang J-8</a></td>
         <td>1953-1970</td>
       </tr>
       <tr>
+        <!-- this left most column is a key column -->
         <th>3rd Gen</th>
         <td>multi-purpose fighter-bombers</td>
+        <!-- The following 3 cells each containing links to the exact figure block of each aircraft in each of the three other pages -->
         <td><a href="NATO.html#F4">F-4</a>, <a href="NATO.html#DMF1">Mirage F1</a></td>
         <td><a href="WP_CIS.html#MIG23">Mig-23</a></td>
         <td>none</td>
         <td>1953-1970</td>
       </tr>
       <tr>
+        <!-- this left most column is a key column -->
         <th>4rd Gen</th>
         <td>Supersonic, multirole, high efficiency. High manoeuvrability</td>
+        <!-- The following 3 cells each containing links to the exact figure block of each aircraft in each of the three other pages -->
         <td><a href="NATO.html#Tornado">Panavia Tornado</a>, <a href="NATO.html#F14">F-14</a>,
           <a href="NATO.html#F15">F-15</a>, <a href="NATO.html#F16">F-16</a>, 
           <a href="NATO.html#DM2000">Mirage-2000</a>
@@ -116,8 +138,10 @@
         <td>1970-1990</td>
       </tr>
       <tr>
+        <!-- this left most column is a key column -->
         <th>4.5th Gen</th>
         <td>Gen 3 with enhanced capabilities, advanced avionics, limited stealth</td>
+        <!-- The following 3 cells each containing links to the exact figure block of each aircraft in each of the three other pages -->
         <td><a href="NATO.html#F18">F-18</a>, <a href="NATO.html#F15EX">F-15E/EX</a>, 
           <a href="NATO.html#Rafale">Rafale</a>, <a href="NATO.html#Typhoon">Eurofighter Typhoon</a>
         </td>
@@ -126,15 +150,21 @@
         <td>1990-present</td>
       </tr>
       <tr>
+        <!-- this left most column is a key column -->
         <th>5th Gen</th>
         <td>Advanced integrated avionics, low observable stealth</td>
+        <!-- The following 3 cells each containing links to the exact figure block of each aircraft in each of the three other pages -->
         <td><a href="NATO.html#F22">F-22</a>, <a href="NATO.html#F35">F-35</a></td>
         <td><a href="WP_CIS.html#SU57">Su-57</a></td>
         <td><a href="Others.html#J20">Chengdu J-20</a></td>
         <td>2000-present</td>
       </tr>
     </table>
+
+    <!-- The following line provides the source information of the table values above -->
     <!-- "p" for paragraph -->	
+    <!-- INSTRUCTION 3 ITEM 6 implemetation: full URL links to external content. Below is another example of this-->
+    <!-- "href" registers the URL of the target distination, target="_blank" means opens a new window or tab for the target-->
     <!--Source: https://www.w3schools.com/html/html_links.asp-->
     <p>Generation classification is provided by AEROSPACEWEB</p>
     <p>Source: <a href="https://en.wikipedia.org/wiki/Jet_fighter_generations" target="_blank">https://en.wikipedia.org/wiki/Jet_fighter_generations</a></p>			
