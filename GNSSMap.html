@@ -19,13 +19,13 @@
 
   <script>
   // initialize the map
-  var map = L.map('Map_Leaflet01').setView([43.72662934, -79.60961920], 18); //-79.60961920,43.72662934
+  var map = L.map('Map_Leaflet01').setView([43.72662934, -79.60961920], 20); //-79.60961920,43.72662934
 
   // load a tile layer
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 20,
+      maxZoom: 25,
     }).addTo(map);
 	  
 	L.control.scale().addTo(map);	  
