@@ -11,7 +11,7 @@
 	
    <script src="LeafletData/jquery-3.6.0.js"></script> 
 
-   <link rel="Custom Stylesheet" href="style1.css">
+   <link rel="Custom Stylesheet" href="Style1.css">
 </head>
 <body class="MapBody">
       
@@ -30,28 +30,10 @@
 	  
 	L.control.scale().addTo(map);	  
 
-	var trail_color = {"color": "#6F5033"};
-	  
-// load GeoJSON from an external file
-  $.getJSON("LeafletData/MVT_Trails.json",function(data){
-		var geojson = L.geoJson(data, {
-        style: trail_color, // Assign the style object to the "style" property of the layer
-        onEachFeature: function (feature, layer) {
-					layer.bindPopup("<h1>Hiking Trail</h1>"
-							+ "<b>Trail Name:  </b>" + feature.properties.Name + "</br>" 
-							+ "<b>Trail Area:  </b>" + feature.properties.AREA + "</br>" 
-						       	+ "<b>Trail Type:  </b>" + feature.properties.TYPE + "</br>"
-							+ "<b>Trail Owner: </b>" + feature.properties.Owner + "</br>"
-							+ "<b>Primary Use: </b>" + feature.properties.PrimaryUse + "</br>"
-							+ "<b>Section:     </b>" + feature.properties.Section + "</br>");
-        	}
-    		});
-    //add geojson layer to map
-		geojson.addTo(map);	
-  });
+
 
 	  // load GeoJSON from an external file
-$.getJSON("LeafletData/Fishing.json",function(data){
+$.getJSON("LeafletData/locations.json",function(data){
     //Add fish icon 
 	var fishIcon = L.icon({
     iconUrl: 'images/fishing.png',
@@ -60,13 +42,13 @@ $.getJSON("LeafletData/Fishing.json",function(data){
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup("<h1>Fishing Spot</h1>" + "</br>" + "<img src='images/fishing.jpg' height='84px' width='160px'/>").openPopup();
+  marker.bindPopup().openPopup();
   return marker; 
 		}
   }  ).addTo(map);
 });	  
 
-$.getJSON("LeafletData/Well.json",function(data){
+$.getJSON("LeafletData/monument.json",function(data){
     //Add fish icon 
 	var wellIcon = L.icon({
     iconUrl: 'images/waterwell.png',
@@ -75,7 +57,7 @@ $.getJSON("LeafletData/Well.json",function(data){
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: wellIcon});
-  marker.bindPopup("<h1>Water Well</h1>" + "</br>" + "<img src='images/Water_Well.jpg' height='128px' width='160px'/>").openPopup();
+  marker.bindPopup("<h1>Control station 963020</h1>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
