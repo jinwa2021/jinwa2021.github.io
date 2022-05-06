@@ -33,16 +33,16 @@
 
 
 	  // load GeoJSON from an external file
-$.getJSON("LeafletData/locations.json",function(data){
+$.getJSON("LeafletData/points.json",function(data){
     //Add fish icon 
 	var fishIcon = L.icon({
-    iconUrl: 'images/fishing.png',
+    iconUrl: 'points.png',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
 	var marker = L.marker(latlng,{icon: fishIcon});
-  marker.bindPopup().openPopup();
+  marker.bindPopup("<h2>GNSS Point</h2>").openPopup();
   return marker; 
 		}
   }  ).addTo(map);
@@ -51,7 +51,7 @@ $.getJSON("LeafletData/locations.json",function(data){
 $.getJSON("LeafletData/monument.json",function(data){
     //Add fish icon 
 	var wellIcon = L.icon({
-    iconUrl: 'images/waterwell.png',
+    iconUrl: 'momument.png',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
@@ -68,8 +68,8 @@ var legend = L.control({ position: "bottomright" });
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Legend</h4>";
-	div.innerHTML += '<i class="icon" style="background-image: url(images/fishing.png);background-repeat: no-repeat;"></i><span>Fishing Spot</span><br>';
-	div.innerHTML += '<i class="icon" style="background-image: url(images/waterwell.png);background-repeat: no-repeat;"></i><span>Water Well</span><br>';
+	div.innerHTML += '<i class="icon" style="background-image: url(points.png);background-repeat: no-repeat;"></i><span>Points</span><br>';
+	div.innerHTML += '<i class="icon" style="background-image: url(momument.png);background-repeat: no-repeat;"></i><span>Monument</span><br>';
   div.innerHTML += '<i style="background: #6F5033"></i><span>Hiking Trail</span><br>';
   return div;
 };
