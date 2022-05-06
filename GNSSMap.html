@@ -19,7 +19,7 @@
 
   <script>
   // initialize the map
-  var map = L.map('Map_Leaflet01').setView([43.72662934, -79.60961920], 20); //-79.60961920,43.72662934
+  var map = L.map('Map_Leaflet01').setView([43.72662934, -79.60961920], 19); //-79.60961920,43.72662934
 
   // load a tile layer
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -37,7 +37,7 @@ $.getJSON("LeafletData/points.json",function(data){
     //Add fish icon 
 	var fishIcon = L.icon({
     iconUrl: 'points.png',
-    iconSize: [20,30]
+    iconSize: [15,20]
   }); 
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
@@ -52,7 +52,7 @@ $.getJSON("LeafletData/monument.json",function(data){
     //Add fish icon 
 	var wellIcon = L.icon({
     iconUrl: 'monument.png',
-    iconSize: [30,40]
+    iconSize: [20,30]
   }); 
   L.geoJson(data  ,{
     pointToLayer: function(feature,latlng){
