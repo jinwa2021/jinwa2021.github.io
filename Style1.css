@@ -1,0 +1,122 @@
+.MapHtml {
+  height: 100%;
+  margin: 0;
+}
+
+.MapBody {
+  height: 100%;
+  margin: 0;
+}
+
+#Ideal {
+  padding-left: 2.5%;
+}
+
+#reportcontent {
+  padding-left: 2.5%;
+}
+
+.title01 {
+  padding-top: 5%;
+}
+
+.title02 {
+  padding-left: 2.5%;
+}
+
+#maptitle {
+  font-style: italic;
+  padding-left: 5%;
+}
+
+#Map01 {
+  position: relative;
+  text-align: center;
+  padding-top: 56.25%;
+  max-height: 800px;
+}
+
+#Map01frame {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  max-width: 1280px;
+  max-height: 720px;
+}
+
+#Map02frame {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  max-width: 1280px;
+  max-height: 720px;
+  frameborder = "2"
+}
+
+#Map03frame {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  max-width: 1280px;
+  max-height: 720px;
+  frameborder = "2"
+}
+
+#Map_Leaflet01 {
+  height: 100%;
+  max-height: 720px;
+  max-width: 1280px;
+}
+
+#logo {
+  width: 80%;
+  left: 10%;
+  min-height:21px;
+  max-height:336px;
+  min-width:50px;
+  max-width:800px;
+}
+
+.legend {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  /*background: white;*/
+  background: rgba(255, 255, 255, 0.8);
+  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+  /*border-radius: 5px;*/
+  line-height: 24px;
+  color: #555;
+}
+.legend h4 {
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 12px 8px;
+  color: #777;
+}
+
+.legend span {
+  position: relative;
+  bottom: 3px;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 0 8px 0 0;
+  opacity: 0.7;
+}
+
+.legend i.icon {
+  background-size: 18px;
+  background-color: rgba(255, 255, 255, 1);
+}
