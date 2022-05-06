@@ -67,10 +67,9 @@ $.getJSON("LeafletData/monument.json",function(data){
 var legend = L.control({ position: "bottomright" });
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Legend</h4>";
+	div.innerHTML += "<h4>Legend</h4>";
 	div.innerHTML += '<i class="icon" style="background-image: url(points.png);background-repeat: no-repeat;"></i><span>Points</span><br>';
 	div.innerHTML += '<i class="icon" style="background-image: url(momument.png);background-repeat: no-repeat;"></i><span>Monument</span><br>';
-  div.innerHTML += '<i style="background: #6F5033"></i><span>Hiking Trail</span><br>';
   return div;
 };
 legend.addTo(map);		
